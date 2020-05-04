@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="Default server">
+
+    <!-- Enable features -->
+    <featureManager>
+        <feature>webProfile-7.0</feature>
+    </featureManager>
+
+    <!-- To allow access to this server from a remote client host="*" has been added to the following element -->
+    <httpEndpoint id="defaultHttpEndpoint"
+                  host="*"
+		  httpPort="${port.http}"/>
+
+    <!-- Automatically expand WAR files and EAR files -->
+    <applicationManager autoExpand="true"/>
+
+</server>
